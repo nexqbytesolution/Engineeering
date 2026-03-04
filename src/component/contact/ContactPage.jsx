@@ -199,7 +199,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Project?

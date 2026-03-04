@@ -24,7 +24,7 @@ export default function MapComponent() {
       }`}
     >
       {/* Map Container */}
-      <div className={`relative ${isFullscreen ? "h-full" : "h-[450px]"}`}>
+      <div className={`relative ${isFullscreen ? "h-full" : "h-112.5"}`}>
         <Image
           src={mapImageUrl}
           alt="Office location map"
@@ -45,7 +45,7 @@ export default function MapComponent() {
           </div>
 
           {/* Location Tooltip */}
-          <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-white rounded-lg shadow-xl p-4 min-w-[200px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-white rounded-lg shadow-xl p-4 min-w-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             <p className="font-semibold text-gray-900">Paradise Construction</p>
             <p className="text-sm text-gray-600">123 Construction Ave</p>
             <p className="text-sm text-gray-600">New York, NY 10001</p>
