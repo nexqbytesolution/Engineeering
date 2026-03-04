@@ -11,6 +11,8 @@ const navigation = [
   { name: "Our Project", href: "/project" },
   { name: "Contact us", href: "/contact" },
   { name: "About us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Blog", href: "/blogs" },
 ];
 
 export default function Navbar() {

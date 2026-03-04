@@ -241,33 +241,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Subscribe to Our <span className="text-green-400">Newsletter</span>
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Get the latest articles and industry insights delivered to your
-            inbox
-          </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2 group">
-              Subscribe
-              <FaArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </form>
-          <p className="text-sm text-blue-200 mt-4">
-            We respect your privacy. Unsubscribe at any time.
-          </p>
-        </div>
-      </section>
     </main>
   );
 }
