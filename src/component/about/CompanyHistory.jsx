@@ -50,14 +50,14 @@ export default function CompanyHistory() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative h-125 rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/building.avif"
               alt="Company history"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-blue-900/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6 text-white">
               <h3 className="text-2xl font-bold mb-2">
                 Two Decades of Excellence
@@ -69,7 +69,7 @@ export default function CompanyHistory() {
           <div className="space-y-8">
             {milestones.map((milestone, index) => (
               <div key={index} className="flex gap-4 group">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                     <milestone.icon className="h-8 w-8" />
                   </div>

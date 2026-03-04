@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
+      <section className="relative h-[60vh] min-h-125 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/building.avif"
@@ -26,7 +26,7 @@ export default function AboutPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/85 to-green-900/90"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-blue-900/90 via-blue-800/85 to-green-900/90"></div>
         </div>
 
         {/* Animated Background Elements */}
@@ -84,7 +84,7 @@ export default function AboutPage() {
       <Testimonials />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"

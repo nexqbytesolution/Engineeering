@@ -72,7 +72,7 @@ export default function MissionVision() {
         </div>
 
         {/* Values Banner */}
-        <div className="mt-12 bg-gradient-to-r from-blue-600 to-green-600 rounded-3xl p-8 text-white">
+        <div className="mt-12 bg-linear-to-r from-blue-600 to-green-600 rounded-3xl p-8 text-white">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <FaHeart className="h-12 w-12 text-white/80" />
