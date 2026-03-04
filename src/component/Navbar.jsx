@@ -4,10 +4,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Our products", href: "/products" },
+  { name: "Our Project", href: "/project" },
   { name: "Contact us", href: "/contact" },
   { name: "About us", href: "/about" },
 ];
@@ -19,12 +20,24 @@ export default function Navbar() {
     <nav className="bg-white shadow-lg relative z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 justify-between items-center">
-          {/* Logo - 30% Blue */}
-          <div className="shrink-0">
-            <Link href="/" className="text-3xl font-bold">
-              <span className="text-blue-600">Sivan</span>
-              <span className="text-green-600">Land</span>
+          <div className="flex items-center gap-3">
+            <Link href="/" className="relative w-32 h-14">
+              <Image
+                src={"/logo.png"}
+                alt="Paradise Land"
+                fill
+                className="object-contain object-left"
+                priority
+              />
             </Link>
+            <div className="flex flex-col">
+              <span className="text-blue-600 font-bold text-lg leading-tight">
+                Paradise Construction
+              </span>
+              <span className="text-green-600 font-semibold text-sm">
+                Pvt Ltd
+              </span>
+            </div>
           </div>
 
           {/* Desktop Navigation - 30% White background with black text */}
